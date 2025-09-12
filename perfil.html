@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil - Mi Portafolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Menú de navegación -->
+  <header>
+    <h2 class="logo">Leonardo Favio</h2>
+    <nav>
+      <ul>
+        <li><a href="perfil.html">Perfil</a></li>
+        <li><a href="portafolio.html">Portafolio</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="admin.html">Administrador</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sección Perfil -->
+  <section class="hero">
+    <div class="foto">
+      <img src="imagenes/foto.jpg" alt="Mi foto">
+    </div>
+    <div class="info">
+      <h1>Hola, soy <span>Leonardo Favio Cotera Arrieta</span></h1>
+      <h3>Soy desarrollador y programador web</h3>
+      <p>
+        Bienvenido a mi portafolio. Aquí encontrarás mis proyectos, 
+        actividades y habilidades en programación y desarrollo web.
+      </p>
+      <a href="contacto.html" class="btn">Contáctame</a>
+    </div>
+  </section>
+
+    <!-- Sección de Habilidades -->
+  <section class="habilidades">
+    <h2>Habilidades</h2>
+    <p class="intro-habilidades">
+      Estas son algunas de las habilidades que he desarrollado a lo largo de mi formación y práctica en desarrollo web:
+    </p>
+
+    <div class="skills-container">
+      <div class="skill">
+        <h4>HTML</h4>
+        <div class="progress">
+          <div class="progress-bar" style="width: 98%;">98%</div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <h4>CSS</h4>
+        <div class="progress">
+          <div class="progress-bar" style="width: 98%;">98%</div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <h4>JavaScript</h4>
+        <div class="progress">
+          <div class="progress-bar" style="width: 80%;">80%</div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <h4>Diseño Web</h4>
+        <div class="progress">
+          <div class="progress-bar" style="width: 80%;">80%</div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <h4>Edición de Video</h4>
+        <div class="progress">
+          <div class="progress-bar" style="width: 60%;">60%</div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <h4>Bases de Datos</h4>
+        <div class="progress">
+          <div class="progress-bar" style="width: 85%;">85%</div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <h4>Trabajo en equipo</h4>
+        <div class="progress">
+          <div class="progress-bar" style="width: 95%;">95%</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <script>
+    // Crear partículas para el fondo
+    document.addEventListener('DOMContentLoaded', function() {
+      const particlesContainer = document.getElementById('particles');
+      const colors = ['#0ea5e9', '#8b5cf6', '#ec4899'];
+      
+      for (let i = 0; i < 50; i++) {
+        const particle = document.createElement('div');
+        particle.classList.add('particle');
+        
+        const size = Math.random() * 20 + 5;
+        const color = colors[Math.floor(Math.random() * colors.length)];
+        
+        particle.style.width = `${size}px`;
+        particle.style.height = `${size}px`;
+        particle.style.background = color;
+        particle.style.left = `${Math.random() * 100}vw`;
+        particle.style.top = `${Math.random() * 100}vh`;
+        particle.style.animationDuration = `${Math.random() * 15 + 10}s`;
+        particle.style.animationDelay = `${Math.random() * 5}s`;
+        
+        particlesContainer.appendChild(particle);
+      }
+    });
+  </script>
+</body>
+</html>
