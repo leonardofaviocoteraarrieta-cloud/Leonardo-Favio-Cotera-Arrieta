@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio - Mi Portafolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Menú de navegación -->
+  <header>
+    <h2 class="logo">Leonardo Favio</h2>
+    <nav>
+      <ul>
+        <li><a href="perfil.html">Perfil</a></li>
+        <li><a href="portafolio.html">Portafolio</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="admin.html">Administrador</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sección Portafolio -->
+  <section>
+    <h2>Mis Actividades</h2>
+    <div id="cards-container" class="cards-container">
+      <!-- Aquí se cargarán las tarjetas con actividades -->
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+  <script>
+    // Mostrar actividades al cargar la página de portafolio
+    window.onload = () => {
+      mostrarActividades();
+    };
+  </script>
+</body>
+</html>
