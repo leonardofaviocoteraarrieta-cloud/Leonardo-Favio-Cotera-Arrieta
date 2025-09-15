@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Administrador - Mi Portafolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Menú de navegación -->
+  <header>
+    <h2 class="logo">Leonardo Favio</h2>
+    <nav>
+      <ul>
+        <li><a href="index.html">Perfil</a></li>
+        <li><a href="portafolio.html">Portafolio</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="admin.html">Administrador</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sección Administrador -->
+  <section>
+    <h2>Administrador</h2>
+
+    <!-- Login -->
+    <div id="login-container">
+      <h3>Iniciar Sesión</h3>
+      <input type="text" id="username" placeholder="Usuario">
+      <input type="password" id="password" placeholder="Contraseña">
+      <button onclick="login()">Ingresar</button>
+      <p id="login-error" class="error"></p>
+    </div>
+
+    <!-- Panel administrador -->
+    <div id="admin-panel" style="display:none;">
+      <div style="text-align:right;">
+        <button onclick="logout()" class="btn-salir">Cerrar Sesión</button>
+      </div>
+
+      <!-- Formulario de administrador -->
+      <div id="admin-form">
+        <h3>Agregar Nueva Actividad</h3>
+        <input type="text" id="actividad-nombre" placeholder="Nombre de la sesión">
+        <input type="file" id="actividad-archivo" accept="application/pdf">
+        <button onclick="agregarActividad()">Guardar</button>
+      </div>
+
+      <!-- Listado de actividades -->
+      <div id="admin-actividades">
+        <h3>Mis Actividades</h3>
+        <div id="admin-cards-container" class="cards-container"></div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+  <script>
+    // Mostrar actividades en el panel admin
+    window.onload = () => {
+      mostrarActividadesAdmin();
+    };
+  </script>
+</body>
+</html>
