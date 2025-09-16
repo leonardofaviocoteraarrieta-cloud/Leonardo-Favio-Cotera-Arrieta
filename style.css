@@ -251,6 +251,7 @@ nav ul li a:hover::after {
 /* Sección de habilidades */
 .habilidades {
   text-align: center;
+  max-width: 700px;
 }
 
 .intro-habilidades {
@@ -862,4 +863,5 @@ button:hover {
   #login-container, #admin-form, .formulario-contacto {
     padding: 1.5rem;
   }
+
 }
