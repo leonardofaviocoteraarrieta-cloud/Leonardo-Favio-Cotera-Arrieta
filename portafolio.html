@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio - Mi Portafolio</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Agregar Font Awesome para iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Menú de navegación -->
+  <header>
+    <div class="logo-container">
+      <img src="imagenes/logoinst.png" alt="Logo Leonardo Favio" class="logo-img">
+      <h2 class="logo">Leonardo Favio</h2>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Perfil</a></li>
+        <li><a href="portafolio.html">Proyecto de Aplicación Profesional</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="admin.html">Administrador</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sección Portafolio -->
+  <section>
+    <h2>Mis Actividades</h2>
+    <div id="cards-container" class="cards-container">
+      <!-- Aquí se cargarán las tarjetas con actividades -->
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+  <script>
+    // Mostrar actividades al cargar la página de portafolio
+    window.onload = () => {
+      mostrarActividades();
+    };
+  </script>
+</body>
+</html>
