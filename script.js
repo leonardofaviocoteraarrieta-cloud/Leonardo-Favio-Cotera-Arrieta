@@ -14,6 +14,10 @@ const baseActividades = [
     archivo: "PROYECTO DE APLICACIÓN PROFESIONAL_20250919_195046_0000.pdf"
   },
   {
+    nombre: "Semana 02 TAP",
+    archivo: "Coopac Dac_Proyecto Final.pdf"
+  },
+  {
     nombre: "Semana 03",
     archivo: "Sistema_Evaluacion_Proyectos_Investigacion_ Version_02 (1).pdf"
   }
@@ -180,4 +184,5 @@ window.onload = () => {
     mostrarActividadesAdmin();
   }
 };
+
 
