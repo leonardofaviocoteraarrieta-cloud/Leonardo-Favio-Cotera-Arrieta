@@ -20,6 +20,18 @@ const baseActividades = [
   {
     nombre: "Semana 03",
     archivo: "Sistema_Evaluacion_Proyectos_Investigacion_ Version_02 (1).pdf"
+  },
+  {
+    nombre: "Semana 04",
+    archivo: "Sistema_Evaluacion_Proyectos_Investigacion_ Version_02 (1).pdf"
+  },
+  {
+    nombre: "Semana 05",
+    archivo: "Sistema_Evaluacion_Proyectos_Investigacion_ Version_02 (1).pdf"
+  },
+  {
+    nombre: "Semana 06",
+    archivo: "Sistema_Evaluacion_Proyectos_Investigacion_ Version_02 (1).pdf"
   }
 ];
 
@@ -184,5 +196,6 @@ window.onload = () => {
     mostrarActividadesAdmin();
   }
 };
+
 
 
