@@ -23,15 +23,15 @@ const baseActividades = [
   },
   {
     nombre: "Semana 04",
-    archivo: "Sistema_Evaluacion_Proyectos_Investigacion_ Version_02 (1).pdf"
+    archivo: "Manual de Administrador.pdf"
   },
   {
     nombre: "Semana 05",
-    archivo: "Sistema_Evaluacion_Proyectos_Investigacion_ Version_02 (1).pdf"
+    archivo: "Manual - Jefe de área.pdf"
   },
   {
     nombre: "Semana 06",
-    archivo: "Sistema_Evaluacion_Proyectos_Investigacion_ Version_02 (1).pdf"
+    archivo: "Manual Docente.pdf"
   }
 ];
 
@@ -196,6 +196,7 @@ window.onload = () => {
     mostrarActividadesAdmin();
   }
 };
+
 
 
 
