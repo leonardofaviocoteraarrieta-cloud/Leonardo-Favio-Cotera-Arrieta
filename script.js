@@ -27,7 +27,7 @@ const baseActividades = [
   },
   {
     nombre: "Semana 05",
-    archivo: "Manual - Jefe de área.pdf"
+    archivo: "Manual Jefe de unidad.pdf"
   },
   {
     nombre: "Semana 06",
@@ -196,6 +196,7 @@ window.onload = () => {
     mostrarActividadesAdmin();
   }
 };
+
 
 
 
